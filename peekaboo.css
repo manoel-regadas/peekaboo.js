@@ -1,0 +1,86 @@
+[data-peekaboo]{
+    transition: all .5s ease-in-out;
+    opacity: 0 ;
+}
+
+[data-peekaboo="in"]{
+    opacity: 1;
+}
+
+/* letering animation */
+
+/* Fade */
+[data-peekaboo][data-lettering="fade"] span{
+    display: inline-block;
+    opacity: 0;
+}
+
+[data-peekaboo="in"][data-lettering="fade"] span{
+    opacity: 1;
+}
+
+/* UP */
+[data-peekaboo][data-lettering="up"] span{
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);   
+}
+
+[data-peekaboo="in"][data-lettering="up"] span{
+    opacity: 1;
+    transform: translateY(0px);
+    will-change: transform;
+}
+
+/* Down */
+[data-peekaboo][data-lettering="down"] span{
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(-20px);   
+}
+
+[data-peekaboo="in"][data-lettering="down"] span{
+    opacity: 1;
+    transform: translateY(0px);
+    will-change: transform;
+}
+
+/* left */
+[data-peekaboo][data-lettering="left"] span{
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(-200px);   
+}
+
+[data-peekaboo="in"][data-lettering="left"] span{
+    opacity: 1;
+    transform: translateX(0px);
+    will-change: transform;
+}
+
+/* right */
+[data-peekaboo][data-lettering="right"] span{
+    display: inline-block;
+    opacity: 0;
+    transform: translateX(20px);   
+}
+
+[data-peekaboo="in"][data-lettering="right"] span{
+    opacity: 1;
+    transform: translateX(0px);
+    will-change: transform;
+}
+
+/* rotate */
+[data-peekaboo][data-lettering="rotate-right"] span{
+    display: inline-block;
+    opacity: 0;
+    transform: rotateY(90deg);   
+}
+
+[data-peekaboo="in"][data-lettering="rotate-right"] span{
+    opacity: 1;
+    transform: rotateY(0deg) ;
+    will-change: transform;
+
+}
