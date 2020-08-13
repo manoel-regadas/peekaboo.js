@@ -62,7 +62,7 @@
 [data-peekaboo][data-lettering="right"] span{
     display: inline-block;
     opacity: 0;
-    transform: translateX(20px);   
+    transform: translateX(200px);   
 }
 
 [data-peekaboo="in"][data-lettering="right"] span{
@@ -82,5 +82,20 @@
     opacity: 1;
     transform: rotateY(0deg) ;
     will-change: transform;
+
+}
+
+[data-peekaboo][data-lettering="scale-down"] span{
+    display: inline-block;
+    opacity: 0; 
+    transform: scale(10);  
+    padding: 0 30px; 
+}
+
+[data-peekaboo="in"][data-lettering="scale-down"] span{
+    opacity: 1;
+    transform: scale(1);   
+    padding: 0;
+    will-change: transform; 
 
 }
