@@ -58,7 +58,7 @@ class Peekaboo {
     } 
 }
 
-const scroll = new Peekaboo({
+const peekaboo = new Peekaboo({
     elements: document.querySelectorAll('[data-peekaboo]'),
     show: 1,
     hide: 0.01,
@@ -70,9 +70,5 @@ const scroll = new Peekaboo({
 
 })
 
-scroll.init()
+peekaboo.init()
 
-//console.log(scroll.)
-
-// const test = document.querySelectorAll('section')
-// console.log(test)
